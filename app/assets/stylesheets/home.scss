@@ -18,6 +18,7 @@
 }
 .memberSolo:hover {
     border-color: #f1f1f1;
+    cursor: pointer;
 }
 .carousel{
   //background-color: blue;
@@ -58,4 +59,72 @@
     background: #2d2d30;
     color: #bdbdbd;
     opacity: 0.95;
+}
+.memberModalBodyOverride{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+// ============ Modal Classes ===========
+.brinModal{
+  background-image: url(asset-path("brinModal1.jpg"));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 40% 100%;
+  background-position: center;
+}
+.brinModalText{
+  color: #ff5815;
+  font-weight: bold;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.brinModalTextBG{
+  background: rgba(0, 0, 0, 0.5);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.brinModalBtn{
+  background-color: #ff5815 !important;
+}
+
+.travModal{
+  background-image: url(asset-path("travModal.jpg"));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 40% 100%;
+  background-position: center;
+}
+.travModalText{
+  color: #ff5815;
+  font-weight: bold;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.travModalTextBG{
+  background: rgba(0, 0, 0, 0.5);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.travModalBtn{
+  background-color: #ff5815 !important;
+}
+
+.devModal{
+  background-image: url(asset-path("devModal.jpg"));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 40% 100%;
+  background-position: center;
+}
+.devModalText{
+  color: #ff5815;
+  font-weight: bold;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.devModalTextBG{
+  background: rgba(0, 0, 0, 0.5);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.devModalBtn{
+  background-color: #ff5815 !important;
 }

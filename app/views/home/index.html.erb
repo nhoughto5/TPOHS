@@ -1,111 +1,174 @@
 <div id="pageWrapper" class="pageWrapper">
-
-
-<!-- Carousel -->
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <%= image_tag("PartyClipper.png", :alt => "New York", class: "img-responsive") %>
-      <div class="carousel-caption">
-        <h3>New York</h3>
-        <p>The atmosphere in New York is lorem ipsum.</p>
+   <!-- Carousel -->
+   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+         <li data-target="#myCarousel" data-slide-to="1"></li>
+         <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+         <div class="item active">
+            <%= image_tag("PartyClipper.png", :alt => "New York", class: "img-responsive") %>
+            <div class="carousel-caption">
+               <h3>New York</h3>
+               <p>The atmosphere in New York is lorem ipsum.</p>
+            </div>
+         </div>
+         <div class="item">
+            <%= image_tag("members1.jpg", :alt => "Chicago", class: "img-responsive") %>
+            <div class="carousel-caption">
+               <h3>Chicago</h3>
+               <p>Thank you, Chicago - A night we won't forget.</p>
+            </div>
+         </div>
+         <div class="item">
+            <%= image_tag("members3.jpg", :alt => "Los Angeles", class: "img-responsive") %>
+            <div class="carousel-caption">
+               <h3>LA</h3>
+               <p>Even though the traffic was a mess, we had the best time.</p>
+            </div>
+         </div>
       </div>
-    </div>
-
-    <div class="item">
-      <%= image_tag("members1.jpg", :alt => "Chicago", class: "img-responsive") %>
-      <div class="carousel-caption">
-        <h3>Chicago</h3>
-        <p>Thank you, Chicago - A night we won't forget.</p>
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+      </a>
+   </div>
+   <div class="bandBody">
+      <div class="bandIntroduction">
+         <div class="container text-center">
+            <h3>THE BAND</h3>
+            <p><em>We love music!</em></p>
+            <p>This is where TPOHS will introduce itsself</p>
+            <br>
+            <div class="row">
+               <div class="col-sm-4">
+                  <p><strong>Brin Porter</strong></p>
+                  <br>
+                  <%= image_tag("brinSolo.jpg", :alt => "Random Name", class: "img-circle img-responsive memberSolo", data: { target: "#brinModal", toggle: "modal"}) %>
+               </div>
+               <div class="col-sm-4">
+                  <p><strong>Travis Charuk</strong></p>
+                  <br>
+                  <%= image_tag("travSolo.jpg", :alt => "Random Name", class: "img-circle img-responsive memberSolo", data: { target: "#travModal", toggle: "modal"}) %>
+               </div>
+               <div class="col-sm-4">
+                  <p><strong>Devon Venoit</strong></p>
+                  <br>
+                  <%= image_tag("devonSolo.jpg", :alt => "Random Name", class: "img-circle img-responsive memberSolo", data: { target: "#devModal", toggle: "modal"}) %>
+               </div>
+            </div>
+         </div>
       </div>
-    </div>
-
-    <div class="item">
-      <%= image_tag("members3.jpg", :alt => "Los Angeles", class: "img-responsive") %>
-      <div class="carousel-caption">
-        <h3>LA</h3>
-        <p>Even though the traffic was a mess, we had the best time.</p>
+      <div class="contactSection">
+         <div id="contact" class="container">
+            <h3 class="text-center">Contact</h3>
+            <p class="text-center"><em>We love our fans!</em></p>
+            <div class="row">
+               <div class="col-md-4">
+                  <p>Fan? Drop a note.</p>
+                  <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
+                  <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+                  <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+               </div>
+               <div class="col-md-8">
+                  <div class="row">
+                     <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                     </div>
+                     <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                     </div>
+                  </div>
+                  <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                  <br>
+                  <div class="row">
+                     <div class="col-md-12 form-group">
+                        <button class="btn-primary pull-right" type="submit">Send</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <br>
+         </div>
       </div>
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+   </div>
 </div>
-<div class="bandBody">
-
-
-<div class="bandIntroduction">
-  <div class="container text-center">
-    <h3>THE BAND</h3>
-    <p><em>We love music!</em></p>
-    <p>We have created a fictional band website. Lorem ipsum..</p>
-    <br>
-    <div class="row">
-      <div class="col-sm-4">
-        <p><strong>Brin Porter</strong></p><br>
-        <%= image_tag("brinSolo.jpg", :alt => "Random Name", class: "img-circle img-responsive memberSolo") %>
+<div id="brinModal" class="modal fade" role="dialog">
+   <div class="modal-dialog ">
+      <!-- Modal content-->
+      <div class="modal-content brinModal">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Brin Porter</h4>
+         </div>
+         <div class="modal-body memberModalBodyOverride">
+           <div class="brinModalTextBG">
+             <p class="brinModalText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor libero id massa dignissim iaculis. Sed justo magna, scelerisque vel fringilla sed, vulputate quis dolor. Phasellus venenatis commodo hendrerit. Maecenas quis mauris mattis, volutpat diam facilisis, eleifend lectus. Mauris vel bibendum leo. Pellentesque et odio at tortor faucibus egestas. Aenean dapibus ultrices ipsum, a pellentesque nunc commodo lacinia. Morbi eget cursus nisi. Nam vel sodales dolor, eget iaculis nunc. Aliquam erat volutpat. Nunc sit amet pretium purus.
+                Sed lacinia metus tincidunt elit congue, a semper odio tempus. Vivamus scelerisque dui lorem, ut cursus ligula placerat id. Ut lectus elit, ultrices nec magna id, venenatis fermentum ligula. Nulla placerat eros lectus, id semper mi dictum sed. Nullam mollis velit eu purus sodales pulvinar. Maecenas in tempus nibh. Vestibulum aliquet consequat neque.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pretium sed dui id vulputate. Donec porttitor porttitor lacus non viverra. Donec a tristique mauris, semper tristique nulla. Ut quis quam vel elit pretium sagittis. Etiam metus tortor, malesuada eu mauris nec, venenatis sagittis sem. Donec et nisi in justo ullamcorper malesuada. Phasellus eget pulvinar felis. In gravida erat orci, vel gravida felis gravida sollicitudin.
+                </p>
+           </div>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+         </div>
       </div>
-      <div class="col-sm-4">
-        <p><strong>Travis Charuk</strong></p><br>
-        <%= image_tag("travSolo.jpg", :alt => "Random Name", class: "img-circle img-responsive memberSolo") %>
-      </div>
-      <div class="col-sm-4">
-        <p><strong>Devon Venoit</strong></p><br>
-        <%= image_tag("devonSolo.jpg", :alt => "Random Name", class: "img-circle img-responsive memberSolo") %>
-      </div>
-    </div>
-  </div>
+   </div>
 </div>
 
-<div class="contactSection">
-<div id="contact" class="container">
-  <h3 class="text-center">Contact</h3>
-  <p class="text-center"><em>We love our fans!</em></p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <p>Fan? Drop a note.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
-    </div>
-    <div class="col-md-8">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
+<div id="travModal" class="modal fade" role="dialog">
+   <div class="modal-dialog ">
+      <!-- Modal content-->
+      <div class="modal-content travModal">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title travModalText">Travis Charuk</h4>
+         </div>
+         <div class="modal-body memberModalBodyOverride">
+           <div class="travModalTextBG">
+             <p class="travModalText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor libero id massa dignissim iaculis. Sed justo magna, scelerisque vel fringilla sed, vulputate quis dolor. Phasellus venenatis commodo hendrerit. Maecenas quis mauris mattis, volutpat diam facilisis, eleifend lectus. Mauris vel bibendum leo. Pellentesque et odio at tortor faucibus egestas. Aenean dapibus ultrices ipsum, a pellentesque nunc commodo lacinia. Morbi eget cursus nisi. Nam vel sodales dolor, eget iaculis nunc. Aliquam erat volutpat. Nunc sit amet pretium purus.
+                Sed lacinia metus tincidunt elit congue, a semper odio tempus. Vivamus scelerisque dui lorem, ut cursus ligula placerat id. Ut lectus elit, ultrices nec magna id, venenatis fermentum ligula. Nulla placerat eros lectus, id semper mi dictum sed. Nullam mollis velit eu purus sodales pulvinar. Maecenas in tempus nibh. Vestibulum aliquet consequat neque.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pretium sed dui id vulputate. Donec porttitor porttitor lacus non viverra. Donec a tristique mauris, semper tristique nulla. Ut quis quam vel elit pretium sagittis. Etiam metus tortor, malesuada eu mauris nec, venenatis sagittis sem. Donec et nisi in justo ullamcorper malesuada. Phasellus eget pulvinar felis. In gravida erat orci, vel gravida felis gravida sollicitudin.
+              </p>
+           </div>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-      <br>
-      <div class="row">
-        <div class="col-md-12 form-group">
-          <button class="btn-primary pull-right" type="submit">Send</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br>
+   </div>
 </div>
 
-</div>
-</div>
+<div id="devModal" class="modal fade" role="dialog">
+   <div class="modal-dialog ">
+      <!-- Modal content-->
+      <div class="modal-content devModal">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title devModalText">Devon Venoit</h4>
+         </div>
+         <div class="modal-body memberModalBodyOverride">
+           <div class="devModalTextBG">
+             <p class="devModalText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor libero id massa dignissim iaculis. Sed justo magna, scelerisque vel fringilla sed, vulputate quis dolor. Phasellus venenatis commodo hendrerit. Maecenas quis mauris mattis, volutpat diam facilisis, eleifend lectus. Mauris vel bibendum leo. Pellentesque et odio at tortor faucibus egestas. Aenean dapibus ultrices ipsum, a pellentesque nunc commodo lacinia. Morbi eget cursus nisi. Nam vel sodales dolor, eget iaculis nunc. Aliquam erat volutpat. Nunc sit amet pretium purus.
+                Sed lacinia metus tincidunt elit congue, a semper odio tempus. Vivamus scelerisque dui lorem, ut cursus ligula placerat id. Ut lectus elit, ultrices nec magna id, venenatis fermentum ligula. Nulla placerat eros lectus, id semper mi dictum sed. Nullam mollis velit eu purus sodales pulvinar. Maecenas in tempus nibh. Vestibulum aliquet consequat neque.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pretium sed dui id vulputate. Donec porttitor porttitor lacus non viverra. Donec a tristique mauris, semper tristique nulla. Ut quis quam vel elit pretium sagittis. Etiam metus tortor, malesuada eu mauris nec, venenatis sagittis sem. Donec et nisi in justo ullamcorper malesuada. Phasellus eget pulvinar felis. In gravida erat orci, vel gravida felis gravida sollicitudin.
+              </p>
+           </div>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+         </div>
+      </div>
+   </div>
 </div>
