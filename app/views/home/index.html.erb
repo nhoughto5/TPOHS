@@ -10,7 +10,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <%= image_tag("PartyClipper.png", :alt => "New York", class: "img-circle travSolo") %>
+      <%= image_tag("PartyClipper.png", :alt => "New York", class: "img-responsive") %>
       <div class="carousel-caption">
         <h3>New York</h3>
         <p>The atmosphere in New York is lorem ipsum.</p>
@@ -18,7 +18,7 @@
     </div>
 
     <div class="item">
-      <%= image_tag("members1.jpg", :alt => "Chicago", class: "img-circle travSolo") %>
+      <%= image_tag("members1.jpg", :alt => "Chicago", class: "img-responsive") %>
       <div class="carousel-caption">
         <h3>Chicago</h3>
         <p>Thank you, Chicago - A night we won't forget.</p>
@@ -26,7 +26,7 @@
     </div>
 
     <div class="item">
-      <%= image_tag("members3.jpg", :alt => "Los Angeles", class: "img-circle travSolo") %>
+      <%= image_tag("members3.jpg", :alt => "Los Angeles", class: "img-responsive") %>
       <div class="carousel-caption">
         <h3>LA</h3>
         <p>Even though the traffic was a mess, we had the best time.</p>
@@ -44,25 +44,64 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+<div class="bandBody">
 
-<!-- Document Header Starts -->
-<div class="container text-center">
-  <h3>THE BAND</h3>
-  <p><em>We love music!</em></p>
-  <p>We have created a fictional band website. Lorem ipsum..</p>
-  <br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p><strong>Name</strong></p><br>
-      <%= image_tag("travSolo.jpg", :alt => "Random Name", class: "img-circle travSolo") %>
-    </div>
-    <div class="col-sm-4">
-      <p><strong>Name</strong></p><br>
-      <%= image_tag("travSolo.jpg", :alt => "Random Name", class: "img-circle travSolo") %>
-    </div>
-    <div class="col-sm-4">
-      <p><strong>Name</strong></p><br>
-      <%= image_tag("travSolo.jpg", :alt => "Random Name", class: "img-circle travSolo") %>
+
+<div class="bandIntroduction">
+  <div class="container text-center">
+    <h3>THE BAND</h3>
+    <p><em>We love music!</em></p>
+    <p>We have created a fictional band website. Lorem ipsum..</p>
+    <br>
+    <div class="row">
+      <div class="col-sm-4">
+        <p><strong>Brin Porter</strong></p><br>
+        <%= image_tag("brinSolo.jpg", :alt => "Random Name", class: "img-circle img-responsive memberSolo") %>
+      </div>
+      <div class="col-sm-4">
+        <p><strong>Travis Charuk</strong></p><br>
+        <%= image_tag("travSolo.jpg", :alt => "Random Name", class: "img-circle img-responsive memberSolo") %>
+      </div>
+      <div class="col-sm-4">
+        <p><strong>Devon Venoit</strong></p><br>
+        <%= image_tag("devonSolo.jpg", :alt => "Random Name", class: "img-circle img-responsive memberSolo") %>
+      </div>
     </div>
   </div>
+</div>
+
+<div class="contactSection">
+<div id="contact" class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>We love our fans!</em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p>Fan? Drop a note.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn-primary pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
+
+</div>
 </div>
