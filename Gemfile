@@ -31,7 +31,9 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'pg'
+
+#UNCOMMENT THIS BEFORE COMMITTING
+# gem 'pg'
 gem 'rails_12factor', group: :production
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -52,4 +54,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 ruby "2.3.3"
 
 gem 'bootstrap-sass', '~> 3.2.0'
+gem 'simple_form', '~> 3.4'
+gem 'devise', '~> 4.2'
 gem 'autoprefixer-rails'

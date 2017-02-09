@@ -1,3 +1,31 @@
-<h1>Shows Index Page</h1>
-<!--<p><%= link_to "Add New Show", new_show_path %></p>
--->
+<div id="show-index" class="container">
+
+  <h1>Shows Index Page</h1>
+  <% if user_signed_in? %>
+    <p><%= link_to "Add New Show", new_show_path %></p>
+  <% end %>
+
+  <% @shows.each do |show| %>
+    <div class="row">
+      <div class="col-sm-6">
+        <h4><%= link_to show.title, show_path(show) %></h4>
+      </div>
+      <div class="col-sm-6">
+        <h5><span class="glyphicon glyphicon-map-marker"></span><%= show.location %></h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <h5><span class="glyphicon glyphicon-calendar"></span><%= show.show_date.try(:to_formatted_s, :long_ordinal) %></h5>
+      </div>
+      <div class="col-sm-3">
+        <h5><span class="glyphicon glyphicon-usd"></span><%= show.ticket_cost %></h5>
+      </div>
+      <div class="col-sm-6">
+        <h5><%= show.description %></h5>
+      </div>
+    </div>
+    <hr />
+  <% end %>
+
+</div>

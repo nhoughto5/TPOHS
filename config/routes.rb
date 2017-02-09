@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  match ':controller(/:action(/:id))', :via => :get
+  devise_for :users
+  # match ':controller(/:action(/:id))', :via => :get
   resources :shows
   root 'home#index'
 
