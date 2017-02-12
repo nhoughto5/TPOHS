@@ -19,8 +19,9 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#home">HOME</a></li>
-                  <li><a href="#band">BAND</a></li>
+                  <li><%= link_to "HOME", root_path(:anchor => 'home') %></li>
+                  <li><%= link_to "BAND", root_path(:anchor => 'bandMembers') %></li>
+                  <!-- <li><a href="#band">BAND</a></li> -->
                   <li><a href="#tour">TOUR</a></li>
                   <li><a href="#tour">GALLERY</a></li>
                   <li><a href="#contact">CONTACT</a></li>
@@ -34,16 +35,18 @@
                         <li><a href="#">Media</a></li>
                      </ul>
                   </li>
-                  <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                  <!-- <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li> -->
+                  <p class="notice"><%= notice %></p>
+                  <p class="alert"><%= alert %></p>
                </ul>
             </div>
          </div>
       </nav>
 
       <!-- These are for the User Registration gem (Devise) -->
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-      
+      <!-- <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p> -->
+
       <%= yield %>
       <!-- Footer -->
       <footer class="text-center">

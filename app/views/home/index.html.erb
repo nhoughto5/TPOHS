@@ -10,7 +10,7 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
          <div class="item active">
-            <%= image_tag("PartyClipper.png", :alt => "New York", class: "img-responsive") %>
+            <%= image_tag("PartyClipper.png", :alt => "New York", class: "img-responsive carouselClass") %>
             <div class="carousel-caption">
                <h3>New York</h3>
                <p>The atmosphere in New York is lorem ipsum.</p>
@@ -41,10 +41,14 @@
       <span class="sr-only">Next</span>
       </a>
    </div>
-   <div class="bandBody">
-      <div class="bandIntroduction">
+   <div id="bandMembers" class="bandBody" data-scroll-index="0">
+      <div class="bandIntroduction fadedMainPageBackgroundCover">
          <div class="container text-center">
-            <h3>THE BAND</h3>
+            <div class="page-header">
+               <!-- <h1>THE BAND</h1> -->
+               <h1 class="deepshadow">The Band</h1>
+               <!-- <div class="clip-text clip-text_one">The Band</div> -->
+            </div>
             <p><em>We love music!</em></p>
             <p>This is where TPOHS will introduce itsself</p>
             <br>
@@ -67,40 +71,92 @@
             </div>
          </div>
       </div>
-      <div class="contactSection">
-         <div id="contact" class="container">
-            <h3 class="text-center">Contact</h3>
-            <p class="text-center"><em>We love our fans!</em></p>
-            <div class="row">
-               <div class="col-md-4">
-                  <p>Fan? Drop a note.</p>
-                  <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
-                  <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
-                  <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
-               </div>
-               <div class="col-md-8">
-                  <div class="row">
-                     <div class="col-sm-6 form-group">
-                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-                     </div>
-                     <div class="col-sm-6 form-group">
-                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-                     </div>
+      <!-- VIDEOS -->
+      <div class="fadedMainPageBackgroundCover">
+         <div class="container text-center">
+            <div class="page-header">
+               <h1 class="deepshadow">Videos</h1>
+            </div>
+            <div class="videoContainer">
+               <div class="row">
+                  <div class="col-sm-6" style="text-align:left">
+                     <p>
+                        Formaldehyde - (Official Video)
+                     </p>
+                     <iframe width="400" height="225" src="https://www.youtube.com/embed/hzYHoVhG0Ww?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                   </div>
-                  <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-                  <br>
-                  <div class="row">
-                     <div class="col-md-12 form-group">
-                        <button class="btn-primary pull-right" type="submit">Send</button>
-                     </div>
+                  <div class="col-sm-6" style="text-align:right">
+                     <p>
+                        Palette For The Party - (Official Video)
+                     </p>
+                     <iframe width="400" height="225" src="https://www.youtube.com/embed/v12XozVLo_E?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                  </div>
+               </div>
+               <br />
+               <div class="row">
+                  <div class="col-sm-6" style="text-align:left">
+                     <p>
+                        Bonzai
+                     </p>
+                     <iframe width="400" height="225" src="https://www.youtube.com/embed/CMX2sqPTAT4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                  <div class="col-sm-6" style="text-align:right">
+                     <p>
+                        Second Hand
+                     </p>
+                     <iframe width="400" height="225" src="https://www.youtube.com/embed/gnmybnodc-Y?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                   </div>
                </div>
             </div>
-            <br>
          </div>
       </div>
    </div>
+   <div class="fadedMainPageBackgroundCover">
+     <div class="container" style="text-align:center">
+       <div class="page-header">
+          <h1 class="deepshadow">Pictures</h1>
+       </div>
+       <iframe scrolling="no" marginheight="0" frameborder="0" width="1141" style="height: 837px; display:block; margin: 0 auto;" src="http://socialgalleria.com/gallery.php?id=10158147741875403&display=album&rows=4&margin=35&cols=4&width=250&font_size=11&title_color=000000&hide_next_back=0&share_buttons=1&shape=rectangle&frame=1&token=0527f1aa-f17b-11e6-aad8-f70223a9e88e"></iframe></div>
+   </div>
+
+   <!-- CONTACT SECTION -->
+   <div class="contactSection">
+      <div id="contact" class="container">
+         <h3 class="text-center">Contact</h3>
+         <p class="text-center"><em>We love our fans!</em></p>
+         <div class="row">
+            <div class="col-md-4">
+               <p>Fan? Drop a note.</p>
+               <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
+               <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+               <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+            </div>
+            <div class="col-md-8">
+               <div class="row">
+                  <div class="col-sm-6 form-group">
+                     <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                  </div>
+                  <div class="col-sm-6 form-group">
+                     <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                  </div>
+               </div>
+               <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+               <br>
+               <div class="row">
+                  <div class="col-md-12 form-group">
+                     <button class="btn-primary pull-right" type="submit">Send</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <br>
+      </div>
+   </div>
 </div>
+
+
+
+<!-- MODALS -->
 <div id="brinModal" class="modal fade" role="dialog">
    <div class="modal-dialog ">
       <!-- Modal content-->
@@ -110,13 +166,13 @@
             <h4 class="modal-title">Brin Porter</h4>
          </div>
          <div class="modal-body memberModalBodyOverride">
-           <div class="brinModalTextBG">
-             <p class="brinModalText">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor libero id massa dignissim iaculis. Sed justo magna, scelerisque vel fringilla sed, vulputate quis dolor. Phasellus venenatis commodo hendrerit. Maecenas quis mauris mattis, volutpat diam facilisis, eleifend lectus. Mauris vel bibendum leo. Pellentesque et odio at tortor faucibus egestas. Aenean dapibus ultrices ipsum, a pellentesque nunc commodo lacinia. Morbi eget cursus nisi. Nam vel sodales dolor, eget iaculis nunc. Aliquam erat volutpat. Nunc sit amet pretium purus.
-                Sed lacinia metus tincidunt elit congue, a semper odio tempus. Vivamus scelerisque dui lorem, ut cursus ligula placerat id. Ut lectus elit, ultrices nec magna id, venenatis fermentum ligula. Nulla placerat eros lectus, id semper mi dictum sed. Nullam mollis velit eu purus sodales pulvinar. Maecenas in tempus nibh. Vestibulum aliquet consequat neque.
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pretium sed dui id vulputate. Donec porttitor porttitor lacus non viverra. Donec a tristique mauris, semper tristique nulla. Ut quis quam vel elit pretium sagittis. Etiam metus tortor, malesuada eu mauris nec, venenatis sagittis sem. Donec et nisi in justo ullamcorper malesuada. Phasellus eget pulvinar felis. In gravida erat orci, vel gravida felis gravida sollicitudin.
-                </p>
-           </div>
+            <div class="brinModalTextBG">
+               <p class="brinModalText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor libero id massa dignissim iaculis. Sed justo magna, scelerisque vel fringilla sed, vulputate quis dolor. Phasellus venenatis commodo hendrerit. Maecenas quis mauris mattis, volutpat diam facilisis, eleifend lectus. Mauris vel bibendum leo. Pellentesque et odio at tortor faucibus egestas. Aenean dapibus ultrices ipsum, a pellentesque nunc commodo lacinia. Morbi eget cursus nisi. Nam vel sodales dolor, eget iaculis nunc. Aliquam erat volutpat. Nunc sit amet pretium purus.
+                  Sed lacinia metus tincidunt elit congue, a semper odio tempus. Vivamus scelerisque dui lorem, ut cursus ligula placerat id. Ut lectus elit, ultrices nec magna id, venenatis fermentum ligula. Nulla placerat eros lectus, id semper mi dictum sed. Nullam mollis velit eu purus sodales pulvinar. Maecenas in tempus nibh. Vestibulum aliquet consequat neque.
+                  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pretium sed dui id vulputate. Donec porttitor porttitor lacus non viverra. Donec a tristique mauris, semper tristique nulla. Ut quis quam vel elit pretium sagittis. Etiam metus tortor, malesuada eu mauris nec, venenatis sagittis sem. Donec et nisi in justo ullamcorper malesuada. Phasellus eget pulvinar felis. In gravida erat orci, vel gravida felis gravida sollicitudin.
+               </p>
+            </div>
          </div>
          <div class="modal-footer">
             <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
@@ -124,7 +180,6 @@
       </div>
    </div>
 </div>
-
 <div id="travModal" class="modal fade" role="dialog">
    <div class="modal-dialog ">
       <!-- Modal content-->
@@ -134,13 +189,13 @@
             <h4 class="modal-title travModalText">Travis Charuk</h4>
          </div>
          <div class="modal-body memberModalBodyOverride">
-           <div class="travModalTextBG">
-             <p class="travModalText">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor libero id massa dignissim iaculis. Sed justo magna, scelerisque vel fringilla sed, vulputate quis dolor. Phasellus venenatis commodo hendrerit. Maecenas quis mauris mattis, volutpat diam facilisis, eleifend lectus. Mauris vel bibendum leo. Pellentesque et odio at tortor faucibus egestas. Aenean dapibus ultrices ipsum, a pellentesque nunc commodo lacinia. Morbi eget cursus nisi. Nam vel sodales dolor, eget iaculis nunc. Aliquam erat volutpat. Nunc sit amet pretium purus.
-                Sed lacinia metus tincidunt elit congue, a semper odio tempus. Vivamus scelerisque dui lorem, ut cursus ligula placerat id. Ut lectus elit, ultrices nec magna id, venenatis fermentum ligula. Nulla placerat eros lectus, id semper mi dictum sed. Nullam mollis velit eu purus sodales pulvinar. Maecenas in tempus nibh. Vestibulum aliquet consequat neque.
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pretium sed dui id vulputate. Donec porttitor porttitor lacus non viverra. Donec a tristique mauris, semper tristique nulla. Ut quis quam vel elit pretium sagittis. Etiam metus tortor, malesuada eu mauris nec, venenatis sagittis sem. Donec et nisi in justo ullamcorper malesuada. Phasellus eget pulvinar felis. In gravida erat orci, vel gravida felis gravida sollicitudin.
-              </p>
-           </div>
+            <div class="travModalTextBG">
+               <p class="travModalText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor libero id massa dignissim iaculis. Sed justo magna, scelerisque vel fringilla sed, vulputate quis dolor. Phasellus venenatis commodo hendrerit. Maecenas quis mauris mattis, volutpat diam facilisis, eleifend lectus. Mauris vel bibendum leo. Pellentesque et odio at tortor faucibus egestas. Aenean dapibus ultrices ipsum, a pellentesque nunc commodo lacinia. Morbi eget cursus nisi. Nam vel sodales dolor, eget iaculis nunc. Aliquam erat volutpat. Nunc sit amet pretium purus.
+                  Sed lacinia metus tincidunt elit congue, a semper odio tempus. Vivamus scelerisque dui lorem, ut cursus ligula placerat id. Ut lectus elit, ultrices nec magna id, venenatis fermentum ligula. Nulla placerat eros lectus, id semper mi dictum sed. Nullam mollis velit eu purus sodales pulvinar. Maecenas in tempus nibh. Vestibulum aliquet consequat neque.
+                  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pretium sed dui id vulputate. Donec porttitor porttitor lacus non viverra. Donec a tristique mauris, semper tristique nulla. Ut quis quam vel elit pretium sagittis. Etiam metus tortor, malesuada eu mauris nec, venenatis sagittis sem. Donec et nisi in justo ullamcorper malesuada. Phasellus eget pulvinar felis. In gravida erat orci, vel gravida felis gravida sollicitudin.
+               </p>
+            </div>
          </div>
          <div class="modal-footer">
             <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
@@ -148,7 +203,6 @@
       </div>
    </div>
 </div>
-
 <div id="devModal" class="modal fade" role="dialog">
    <div class="modal-dialog ">
       <!-- Modal content-->
@@ -158,13 +212,13 @@
             <h4 class="modal-title devModalText">Devon Venoit</h4>
          </div>
          <div class="modal-body memberModalBodyOverride">
-           <div class="devModalTextBG">
-             <p class="devModalText">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor libero id massa dignissim iaculis. Sed justo magna, scelerisque vel fringilla sed, vulputate quis dolor. Phasellus venenatis commodo hendrerit. Maecenas quis mauris mattis, volutpat diam facilisis, eleifend lectus. Mauris vel bibendum leo. Pellentesque et odio at tortor faucibus egestas. Aenean dapibus ultrices ipsum, a pellentesque nunc commodo lacinia. Morbi eget cursus nisi. Nam vel sodales dolor, eget iaculis nunc. Aliquam erat volutpat. Nunc sit amet pretium purus.
-                Sed lacinia metus tincidunt elit congue, a semper odio tempus. Vivamus scelerisque dui lorem, ut cursus ligula placerat id. Ut lectus elit, ultrices nec magna id, venenatis fermentum ligula. Nulla placerat eros lectus, id semper mi dictum sed. Nullam mollis velit eu purus sodales pulvinar. Maecenas in tempus nibh. Vestibulum aliquet consequat neque.
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pretium sed dui id vulputate. Donec porttitor porttitor lacus non viverra. Donec a tristique mauris, semper tristique nulla. Ut quis quam vel elit pretium sagittis. Etiam metus tortor, malesuada eu mauris nec, venenatis sagittis sem. Donec et nisi in justo ullamcorper malesuada. Phasellus eget pulvinar felis. In gravida erat orci, vel gravida felis gravida sollicitudin.
-              </p>
-           </div>
+            <div class="devModalTextBG">
+               <p class="devModalText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor libero id massa dignissim iaculis. Sed justo magna, scelerisque vel fringilla sed, vulputate quis dolor. Phasellus venenatis commodo hendrerit. Maecenas quis mauris mattis, volutpat diam facilisis, eleifend lectus. Mauris vel bibendum leo. Pellentesque et odio at tortor faucibus egestas. Aenean dapibus ultrices ipsum, a pellentesque nunc commodo lacinia. Morbi eget cursus nisi. Nam vel sodales dolor, eget iaculis nunc. Aliquam erat volutpat. Nunc sit amet pretium purus.
+                  Sed lacinia metus tincidunt elit congue, a semper odio tempus. Vivamus scelerisque dui lorem, ut cursus ligula placerat id. Ut lectus elit, ultrices nec magna id, venenatis fermentum ligula. Nulla placerat eros lectus, id semper mi dictum sed. Nullam mollis velit eu purus sodales pulvinar. Maecenas in tempus nibh. Vestibulum aliquet consequat neque.
+                  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pretium sed dui id vulputate. Donec porttitor porttitor lacus non viverra. Donec a tristique mauris, semper tristique nulla. Ut quis quam vel elit pretium sagittis. Etiam metus tortor, malesuada eu mauris nec, venenatis sagittis sem. Donec et nisi in justo ullamcorper malesuada. Phasellus eget pulvinar felis. In gravida erat orci, vel gravida felis gravida sollicitudin.
+               </p>
+            </div>
          </div>
          <div class="modal-footer">
             <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
