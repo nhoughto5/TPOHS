@@ -33,7 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 #UNCOMMENT THIS BEFORE COMMITTING
-# gem 'pg'
+gem 'pg'
 gem 'rails_12factor', group: :production
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -52,7 +52,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 ruby "2.3.3"
-#gem 'bcrypt','~>3.1.11' 
+#gem 'bcrypt','~>3.1.11'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'simple_form', '~> 3.4'
 gem 'devise', '~> 4.2'
