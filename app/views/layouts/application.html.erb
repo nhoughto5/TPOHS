@@ -35,6 +35,9 @@
                         <li><a href="#">Media</a></li>
                      </ul>
                   </li>
+                  <% if user_signed_in? %>
+                  <li><%= link_to "SIGN OUT", destroy_user_session_path, method: :delete %></li>
+                  <% end %>
                   <!-- <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li> -->
                   <p class="notice"><%= notice %></p>
                   <p class="alert"><%= alert %></p>

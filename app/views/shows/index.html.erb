@@ -1,9 +1,13 @@
-<div id="show-index" class="container">
+<div class="show-index list-all-shows" class="container">
 
   <h1>Shows Index Page</h1>
-  <% if user_signed_in? %>
-    <p><%= link_to "Add New Show", new_show_path %></p>
-  <% end %>
+
+  <div class="show-buttons">
+    <% if user_signed_in? %>
+      <%= link_to "Add New Show", new_show_path, class:"btn-show" %>
+    <% end %>
+    <%= link_to "Main Page", root_path, class:"btn-show" %>
+  </div>
 
   <% @shows.each do |show| %>
     <div class="row">
