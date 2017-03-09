@@ -8,9 +8,36 @@
   padding: 50px;
 }
 
-#show-index{
+.show-index{
   background: #2d2d30;
   color: #bdbdbd;
   opacity: 0.95;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.list-all-shows {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.show-buttons {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.btn-show {
+  margin: 0 10px;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.btn-show:hover {
+  background-color: #fff;
+}
+
+.login-heading {
   margin-top: 50px;
 }
