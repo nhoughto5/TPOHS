@@ -1,204 +1,186 @@
 <div id="pageWrapper" class="pageWrapper">
-   <!-- Carousel -->
-   <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-         <li data-target="#myCarousel" data-slide-to="1"></li>
-         <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-         <div class="item active">
-            <%= image_tag("PartyClipper.png", :alt => "New York", class: "img-responsive carouselClass") %>
-            <div class="carousel-caption">
-               <h3>New York</h3>
-               <p>The atmosphere in New York is lorem ipsum.</p>
-            </div>
+<!-- Carousel -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+   <!-- Indicators -->
+   <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+   </ol>
+   <!-- Wrapper for slides -->
+   <div class="carousel-inner" role="listbox">
+      <div class="item active">
+         <%= image_tag("PartyClipper.png", :alt => "New York", class: "img-responsive carouselClass") %>
+         <!-- <div class="carousel-caption">
+            <h3>New York</h3>
+            <p>The atmosphere in New York is lorem ipsum.</p>
+         </div> -->
+      </div>
+      <div class="item">
+         <%= image_tag("members1.jpg", :alt => "Chicago", class: "img-responsive") %>
+         <!-- <div class="carousel-caption">
+            <h3>Chicago</h3>
+            <p>Thank you, Chicago - A night we won't forget.</p>
+         </div> -->
+      </div>
+      <div class="item">
+         <%= image_tag("members3.jpg", :alt => "Los Angeles", class: "img-responsive") %>
+         <!-- <div class="carousel-caption">
+            <h3>LA</h3>
+            <p>Even though the traffic was a mess, we had the best time.</p>
+         </div> -->
+      </div>
+   </div>
+   <!-- Left and right controls -->
+   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+   <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+   <span class="sr-only">Previous</span>
+   </a>
+   <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+   <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+   <span class="sr-only">Next</span>
+   </a>
+</div>
+<div id="bandMembers" class="bandBody" data-scroll-index="0">
+   <div class="bandIntroduction fadedMainPageBackgroundCover">
+      <div class="container text-center">
+         <div class="page-header">
+            <!-- <h1>THE BAND</h1> -->
+            <h1 class="deepshadow">The Band</h1>
+            <!-- <div class="clip-text clip-text_one">The Band</div> -->
          </div>
-         <div class="item">
-            <%= image_tag("members1.jpg", :alt => "Chicago", class: "img-responsive") %>
-            <div class="carousel-caption">
-               <h3>Chicago</h3>
-               <p>Thank you, Chicago - A night we won't forget.</p>
+         <p><em>"If George Clinton and Tom Waits had a love child, raised it on a music commune and then sent it to folk festival summer camp.."</em></p>
+         <br>
+         <p>Since finding each other in Nelson, B.C. seven years ago The Party On High Street has worked tirelessly to bring it's signature feel-good funk jams to the people! We are a lively dance-inducing mix of funk, folk and jazz fuelled rockn' roll, joyfully delivered and presented like a funbomb waiting to make you jive. Our band sings of peculiar youthful enchantments, weird love, and some of the odder aspects of life. Touring and playing live shows has fed our spirits and stroked our souls since the beginning. Every summer we travel further into the Canadian festival scene. Playing the campfires and stages, bars and backyards. This past summer we performed at over 6 music festivals and we are gearing up to do it again this year. At these festivals we've developed a family of friends and fellow musicians, who we've joined on stage and off for plenty of collaborations and all around good time merry music makin'! We're taking our new songs and these experiences and bringing our brand new first ever acoustic album to you Spring/Summer 2015! At Yer' Place, Baby!</p>
+         <br>
+         <div class="row">
+            <div class="col-sm-4">
+               <p><strong>Brin Porter</strong></p>
+               <br>
+               <%= image_tag("brinSolo.jpg", :alt => "Random Name", class: "img-circle img-responsive memberSolo", data: { target: "#brinModal", toggle: "modal"}) %>
             </div>
-         </div>
-         <div class="item">
-            <%= image_tag("members3.jpg", :alt => "Los Angeles", class: "img-responsive") %>
-            <div class="carousel-caption">
-               <h3>LA</h3>
-               <p>Even though the traffic was a mess, we had the best time.</p>
+            <div class="col-sm-4">
+               <p><strong>Travis Charuk</strong></p>
+               <br>
+               <%= image_tag("travSolo.jpg", :alt => "Random Name", class: "img-circle img-responsive memberSolo", data: { target: "#travModal", toggle: "modal"}) %>
+            </div>
+            <div class="col-sm-4">
+               <p><strong>Devon Venoit</strong></p>
+               <br>
+               <%= image_tag("devonSolo.jpg", :alt => "Random Name", class: "img-circle img-responsive memberSolo", data: { target: "#devModal", toggle: "modal"}) %>
             </div>
          </div>
       </div>
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-      </a>
    </div>
-   <div id="bandMembers" class="bandBody" data-scroll-index="0">
-      <div class="bandIntroduction fadedMainPageBackgroundCover">
-         <div class="container text-center">
-            <div class="page-header">
-               <!-- <h1>THE BAND</h1> -->
-               <h1 class="deepshadow">The Band</h1>
-               <!-- <div class="clip-text clip-text_one">The Band</div> -->
-            </div>
-            <p><em>We love music!</em></p>
-            <p>This is where TPOHS will introduce itsself</p>
-            <br>
+   <!-- VIDEOS -->
+   <div class="fadedMainPageBackgroundCover">
+      <div class="container text-center">
+         <div class="page-header">
+            <h1 class="deepshadow">Videos</h1>
+         </div>
+         <div class="videoContainer">
             <div class="row">
-               <div class="col-sm-4">
-                  <p><strong>Brin Porter</strong></p>
-                  <br>
-                  <%= image_tag("brinSolo.jpg", :alt => "Random Name", class: "img-circle img-responsive memberSolo", data: { target: "#brinModal", toggle: "modal"}) %>
+               <div class="col-sm-6" style="text-align:left">
+                  <p>
+                     Formaldehyde - (Official Video)
+                  </p>
+                  <iframe width="400" height="225" src="https://www.youtube.com/embed/hzYHoVhG0Ww?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                </div>
-               <div class="col-sm-4">
-                  <p><strong>Travis Charuk</strong></p>
-                  <br>
-                  <%= image_tag("travSolo.jpg", :alt => "Random Name", class: "img-circle img-responsive memberSolo", data: { target: "#travModal", toggle: "modal"}) %>
-               </div>
-               <div class="col-sm-4">
-                  <p><strong>Devon Venoit</strong></p>
-                  <br>
-                  <%= image_tag("devonSolo.jpg", :alt => "Random Name", class: "img-circle img-responsive memberSolo", data: { target: "#devModal", toggle: "modal"}) %>
+               <div class="col-sm-6" style="text-align:right">
+                  <p>
+                     Palette For The Party - (Official Video)
+                  </p>
+                  <iframe width="400" height="225" src="https://www.youtube.com/embed/v12XozVLo_E?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                </div>
             </div>
-         </div>
-      </div>
-      <!-- VIDEOS -->
-      <div class="fadedMainPageBackgroundCover">
-         <div class="container text-center">
-            <div class="page-header">
-               <h1 class="deepshadow">Videos</h1>
-            </div>
-            <div class="videoContainer">
-               <div class="row">
-                  <div class="col-sm-6" style="text-align:left">
-                     <p>
-                        Formaldehyde - (Official Video)
-                     </p>
-                     <iframe width="400" height="225" src="https://www.youtube.com/embed/hzYHoVhG0Ww?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                  <div class="col-sm-6" style="text-align:right">
-                     <p>
-                        Palette For The Party - (Official Video)
-                     </p>
-                     <iframe width="400" height="225" src="https://www.youtube.com/embed/v12XozVLo_E?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                  </div>
+            <br />
+            <div class="row">
+               <div class="col-sm-6" style="text-align:left">
+                  <p>
+                     Bonzai
+                  </p>
+                  <iframe width="400" height="225" src="https://www.youtube.com/embed/CMX2sqPTAT4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                </div>
-               <br />
-               <div class="row">
-                  <div class="col-sm-6" style="text-align:left">
-                     <p>
-                        Bonzai
-                     </p>
-                     <iframe width="400" height="225" src="https://www.youtube.com/embed/CMX2sqPTAT4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                  <div class="col-sm-6" style="text-align:right">
-                     <p>
-                        Second Hand
-                     </p>
-                     <iframe width="400" height="225" src="https://www.youtube.com/embed/gnmybnodc-Y?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                  </div>
+               <div class="col-sm-6" style="text-align:right">
+                  <p>
+                     Second Hand
+                  </p>
+                  <iframe width="400" height="225" src="https://www.youtube.com/embed/gnmybnodc-Y?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                </div>
             </div>
          </div>
       </div>
    </div>
-
-   <!-- SHOWS -->
-   <div class="show-index list-all-shows">
-
-     <h1>Upcoming Shows</h1>
-     <% if user_signed_in? %>
-       <div class="show-buttons">
-         <%= link_to "Add New Show", new_show_path, class:"btn-show" %>
-         <%= link_to "Shows Index Page", shows_path, class:"btn-show" %>
-       </div>
-     <% end %>
-
-     <% @shows.each do |show| %>
-       <% if show.show_date >= Date.today %>
+</div>
+<!-- SHOWS -->
+<div class="fadedMainPageBackgroundCover">
+   <div class="container" id="showsTable" style="text-align:center">
+     <div class="page-header">
+        <h1 class="deepshadow">Upcoming Shows</h1>
+     </div>
+      <div class="show-index list-all-shows">
+         <% if user_signed_in? %>
+         <div class="show-buttons">
+            <%= link_to "Add New Show", new_show_path, class:"btn-show" %>
+            <%= link_to "Shows Index Page", shows_path, class:"btn-show" %>
+         </div>
+         <% end %>
+         <% @shows.each do |show| %>
+         <% if show.show_date >= Date.today %>
          <div class="row">
-           <div class="col-sm-6">
-             <h4><%= link_to show.title, show_path(show) %></h4>
-           </div>
-           <div class="col-sm-6">
-             <h5><span class="glyphicon glyphicon-map-marker"></span><%= show.location %></h5>
-           </div>
+            <div class="col-sm-6">
+               <h4><%= link_to show.title, show_path(show) %></h4>
+            </div>
+            <div class="col-sm-6">
+               <h5><span class="glyphicon glyphicon-map-marker"></span><%= show.location %></h5>
+            </div>
          </div>
          <div class="row">
-           <div class="col-sm-3">
-             <h5><span class="glyphicon glyphicon-calendar"></span><%= show.show_date.try(:to_formatted_s, :long_ordinal) %></h5>
-           </div>
-           <div class="col-sm-3">
-             <h5><span class="glyphicon glyphicon-usd"></span><%= show.ticket_cost %></h5>
-           </div>
-           <div class="col-sm-6">
-             <h5><%= show.description %></h5>
-           </div>
+            <div class="col-sm-3">
+               <h5><span class="glyphicon glyphicon-calendar"></span><%= show.show_date.try(:to_formatted_s, :long_ordinal) %></h5>
+            </div>
+            <div class="col-sm-3">
+               <h5><span class="glyphicon glyphicon-usd"></span><%= show.ticket_cost %></h5>
+            </div>
+            <div class="col-sm-6">
+               <h5><%= show.description %></h5>
+            </div>
          </div>
          <hr />
-       <% end %>
-     <% end %>
-
+         <% end %>
+         <% end %>
+      </div>
    </div>
-
-   <!-- PHOTOS -->
-   <div class="fadedMainPageBackgroundCover">
-     <div class="container" style="text-align:center">
-       <div class="page-header">
-          <h1 class="deepshadow">Pictures</h1>
-       </div>
-       <div class="iframe">
+</div>
+<!-- PHOTOS -->
+<div class="fadedMainPageBackgroundCover">
+   <div class="container" id="picGallery" style="text-align:center">
+      <div class="page-header">
+         <h1 class="deepshadow">Pictures</h1>
+      </div>
+      <div class="iframe">
          <!-- <iframe scrolling="no" marginheight="0" frameborder="0" width="1141" align="middle" style="height: 837px; display:block; margin: 0 auto; " src="http://socialgalleria.com/gallery.php?id=10158147741875403&display=album&rows=4&margin=35&cols=4&width=250&font_size=11&title_color=000000&hide_next_back=0&share_buttons=1&shape=rectangle&frame=1&token=0527f1aa-f17b-11e6-aad8-f70223a9e88e"></iframe> -->
-         <iframe src="//embedsocial.com/facebook_album/album_photos/10158147741875403" width="900" height="1500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-       </div>
+         <iframe src="//embedsocial.com/facebook_album/album_photos/10158147741875403" width="900" height="1250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      </div>
    </div>
-
    <!-- CONTACT SECTION -->
+   <div align="center">
    <div class="contactSection">
       <div id="contact" class="container">
          <h3 class="text-center">Contact</h3>
-         <p class="text-center"><em>We love our fans!</em></p>
+         <p class="text-center"><em>We love our friends!</em></p>
          <div class="row">
-            <div class="col-md-4">
+            <div>
                <p>Fan? Drop a note.</p>
-               <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
-               <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
-               <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
-            </div>
-            <div class="col-md-8">
-               <div class="row">
-                  <div class="col-sm-6 form-group">
-                     <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-                  </div>
-                  <div class="col-sm-6 form-group">
-                     <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-                  </div>
-               </div>
-               <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-               <br>
-               <div class="row">
-                  <div class="col-md-12 form-group">
-                     <button class="btn-primary pull-right" type="submit">Send</button>
-                  </div>
-               </div>
+               <p><span class="glyphicon glyphicon-map-marker"></span> Victoria B.C.</p>
+               <p><span class="glyphicon glyphicon-envelope"></span> Email: thepartyonhighstreet@hotmail.com</p>
+               <p><span class="glyphicon glyphicon-facebook"></span><a href="https://www.facebook.com/thepartyonhighstreet">Check us out on Facebook!</a></p>
             </div>
          </div>
          <br>
       </div>
    </div>
 </div>
-
-
-
 <!-- MODALS -->
 <div id="brinModal" class="modal fade" role="dialog">
    <div class="modal-dialog ">

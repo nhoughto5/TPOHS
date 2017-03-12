@@ -16,6 +16,12 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+ html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+ }
+
  //=============== NAV BAR ==============//
  .navbar {
      margin-bottom: 0;
@@ -64,6 +70,14 @@
  }
 
 
+.estitle{
+  color: red !important;
+}
+body > div:nth-child(1) > div > div > div{
+  display: none !important;
+  color: red !important;
+}
+
 
 
  //=============== FOOTER ==============//
@@ -71,9 +85,14 @@ footer {
     background-color: #2d2d30;
     color: #f5f5f5;
     padding: 32px;
+    position: relative;
+    bottom:0;
+    width:100%;
+    opacity: 0.95;
 }
 
 footer a {
+    opacity: 0.95;
     color: #f5f5f5;
 }
 
