@@ -9,6 +9,17 @@
   opacity: 0.95;
   height:100%;
 }
+.fadedMainPageBackgroundSignUp{
+  background: #2d2d30;
+  color: #bdbdbd;
+  opacity: 0.95;
+  height:100vh;
+}
+
+.login-heading {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
 
 .pageWrapper{
   background-image: url(asset-path("members1.jpg"));
