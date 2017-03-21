@@ -2,6 +2,9 @@
    <div class="fadedMainPageBackgroundSignUp">
       <div class="container text-center show-index">
          <h1><%= @show.title %></h1>
+         <% if @show.shows_img.exists? %>
+         <%= image_tag @show.shows_img.url(:shows_index) %>
+         <% end %>
          <h2><%= @show.location %></h2>
          <h3><%= @show.show_date %></h3>
          <h3><%= @show.ticket_cost %></h3>
