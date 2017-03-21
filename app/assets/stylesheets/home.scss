@@ -52,11 +52,13 @@
 .carouselClass{
   width: 1200px;
   height: 700px;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
 }
 //Carousel
 .carousel-inner img {
-    -webkit-filter: grayscale(90%);
-    filter: grayscale(90%); /* make all photos black and white */
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%); /* make all photos black and white */
     width: 100%; /* Set width to 100% */
     margin: auto;
     max-height: 800px;

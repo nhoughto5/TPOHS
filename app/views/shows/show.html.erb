@@ -1,14 +1,18 @@
-<div class="container text-center show-index">
-  <h1><%= @show.title %></h1>
-  <h2><%= @show.location %></h2>
-  <h3><%= @show.show_date %></h3>
-  <h3><%= @show.ticket_cost %></h3>
-  <h4><%= @show.description %></h4>
-  <div class="show-buttons">
-    <%= link_to "Back to All Shows", root_path, class:"btn-show" %>
-    <% if user_signed_in? %>
-      <%= link_to "Edit Show", edit_show_path(@show), class:"btn-show" %>
-      <%= link_to "Delete Show", show_path(@show), class:"btn-show", method: :delete, data: {confirm: "Are you sure you want to delete this show?"} %>
-    <% end %>
-  </div>
+<div id="pageWrapper" class="pageWrapper">
+   <div class="fadedMainPageBackgroundSignUp">
+      <div class="container text-center show-index">
+         <h1><%= @show.title %></h1>
+         <h2><%= @show.location %></h2>
+         <h3><%= @show.show_date %></h3>
+         <h3><%= @show.ticket_cost %></h3>
+         <h4><%= @show.description %></h4>
+         <div class="show-buttons">
+            <%= link_to "Back to All Shows", root_path, class:"btn-show" %>
+            <% if user_signed_in? %>
+            <%= link_to "Edit Show", edit_show_path(@show), class:"btn-show" %>
+            <%= link_to "Delete Show", show_path(@show), class:"btn-show", method: :delete, data: {confirm: "Are you sure you want to delete this show?"} %>
+            <% end %>
+         </div>
+      </div>
+   </div>
 </div>
