@@ -153,6 +153,10 @@
                       <div class="col-sm-6 shows-box">
                         <%= image_tag show.shows_img.url(:shows_index) %>
                       </div>
+                  <% else %>
+                      <div class="col-sm-6 shows-box">
+                        <%= image_tag('defaultPoster.jpg') %>
+                      </div>
                   <% end %>
                 </div>
                 <hr />
