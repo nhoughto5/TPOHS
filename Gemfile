@@ -36,7 +36,7 @@ gem 'paperclip', '~> 5.1'
 # gem 'bcrypt', '~> 3.1.7'
 
 #UNCOMMENT THIS BEFORE COMMITTING TO HEROKU
-#gem 'pg'
+gem 'pg'
 gem 'rails_12factor', group: :production
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

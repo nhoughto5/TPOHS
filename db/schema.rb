@@ -12,21 +12,24 @@
 
 ActiveRecord::Schema.define(version: 20170321040709) do
 
-  create_table "shows", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "shows", force: :cascade do |t|
     t.string   "title"
     t.date     "show_date"
-    t.text     "description",            limit: 65535
+    t.text     "description"
     t.string   "ticket_cost"
     t.string   "location"
-    t.datetime "created_at",                           null: false
-    t.datetime "updated_at",                           null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
     t.string   "shows_img_file_name"
     t.string   "shows_img_content_type"
     t.integer  "shows_img_file_size"
     t.datetime "shows_img_updated_at"
   end
 
-  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
