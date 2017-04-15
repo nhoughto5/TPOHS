@@ -128,23 +128,32 @@
          <% @shows.each do |show| %>
          <% if show.show_date >= Date.today %>
          <div class="row">
-            <div class="col-sm-6">
-               <h4><%= link_to show.title, show_path(show) %></h4>
-            </div>
-            <div class="col-sm-6">
-               <h5><span class="glyphicon glyphicon-map-marker"></span><%= show.location %></h5>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-sm-3">
-               <h5><span class="glyphicon glyphicon-calendar"></span><%= show.show_date.try(:to_formatted_s, :long_ordinal) %></h5>
-            </div>
-            <div class="col-sm-3">
-               <h5><span class="glyphicon glyphicon-usd"></span><%= show.ticket_cost %></h5>
-            </div>
-            <div class="col-sm-6">
+           <div class="col-sm-6 shows-box">
+             <div class="row shows-info">
+               <div class="half">
+                 <h4><%= link_to show.title, show_path(show) %></h4>
+               </div>
+               <div class="half">
+                 <h5><span class="glyphicon glyphicon-map-marker"></span><%= show.location %></h5>
+               </div>
+             </div>
+             <div class="row shows-info">
+               <div class="half">
+                 <h5><span class="glyphicon glyphicon-calendar"></span><%= show.show_date.try(:to_formatted_s, :long_ordinal) %></h5>
+               </div>
+               <div class="half">
+                 <h5><span class="glyphicon glyphicon-usd"></span><%= show.ticket_cost %></h5>
+               </div>
+             </div>
+             <div class="row shows-info">
                <h5><%= show.description %></h5>
-            </div>
+             </div>
+           </div>
+           <% if show.shows_img.exists? %>
+           <div class="col-sm-6 shows-box">
+             <%= image_tag show.shows_img.url(:shows_index) %>
+           </div>
+           <% end %>
          </div>
          <hr />
          <% end %>
